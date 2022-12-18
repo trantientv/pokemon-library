@@ -1,0 +1,46 @@
+.wrapper{
+    position: relative;
+    background-image: url("https://external-preview.redd.it/EG7bjGp5PDvZ8golrKh3m84n-A9khC5jDE-hqqoVfvA.png?format=pjpg&auto=webp&s=3d441c3774c597cd0136e9634303ef86c0d8677a");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.nav-page{
+    position: fixed;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    list-style: none;
+    li{
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: rgb(123, 123, 123);
+        margin: 20px 0;
+        transition: all 0.3s linear;
+        &.active{
+            background-color: rgb(228, 228, 228);
+        }
+    }
+}
+.handle-btn{
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    &:hover i{
+        transform: scale(1.1);
+    }
+    span{
+        margin: 10px 0;
+    }
+    i{
+        transition: all 0.3s linear;
+        color: beige;
+        text-shadow: 0 0 3px #000, 2px 2px 7px #9be1ff, -2px -2px 7px #9be1ff;
+    }
+}

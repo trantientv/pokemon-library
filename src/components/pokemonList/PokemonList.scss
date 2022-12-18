@@ -1,0 +1,60 @@
+.pokemon-list-container{
+    background-color: rgb(48, 48, 48);
+    background-image: url("https://fisoloji.com/wp-content/uploads/2020/08/pokemon-wallpaper-23.jpg");
+    background-size: cover;
+    background-position:  center;
+    background-blend-mode: soft-light;
+    scroll-behavior: smooth;
+
+}
+.pokemon-list{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    padding-right: 40px;
+}
+.pokemon-list-btn{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 60px;
+    button{
+        outline: none;
+        border: none;
+        background-color: aqua;
+        border-radius: 15px;
+        padding: 10px 24px;
+        font-weight: 600;
+        font-size: 16px;
+    }
+}
+
+.load-more-btn{
+    cursor: pointer;
+    padding: 0 120px;
+    border-radius: 26px;
+    margin: 30px 0 80px;
+    border: 2px dashed #c3edff;
+    background-color: transparent;
+    transition: all 0.3s linear;
+    &:hover{
+        border: 2px solid #83daff;
+        box-shadow: 1px 1px 4px #83daff, -1px -1px 4px #83daff;
+    }
+    p{
+        font-weight: 600;
+        font-size: 16px;
+        color: white;
+        text-shadow: 0 0 3px #000, 2px 2px 7px #9be1ff, -2px -2px 7px #9be1ff;
+    }
+}
+
+@keyframes skelatonLoading {
+    0%{
+        transform: translateX(-20px) ;
+    }
+    100%{
+        transform: translateX(190px) ;
+    }
+}

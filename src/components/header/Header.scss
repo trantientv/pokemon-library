@@ -1,0 +1,69 @@
+
+.header{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 1px 4px 26px lavender;
+    background-image:   
+    url("https://i.pinimg.com/originals/0c/4b/61/0c4b61db17a53de6ba0f4ffa3b842c2b.gif"), //pokemon
+    url("https://cdn.wallpapersafari.com/12/86/pYQlLJ.gif"); //back-ground
+    background-repeat: 
+        no-repeat , 
+        repeat-x;
+    background-position: 
+        -50px 70%, 
+        0px 0px;
+    background-size: 
+        60px, 
+        contain;
+    animation: 10s para infinite linear ,  10s para infinite linear;
+    @keyframes para {
+        100% {
+          background-position: 
+            100vw 70%,
+            -100px 0px;
+          }
+        }
+    .header-nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        // flex: 1;
+        li{
+            display: flex;
+            align-items: center;
+            padding: 10px 15px;
+            color:azure;
+            cursor: pointer;
+            margin:0 16px;
+            transition: all 0.2s linear;
+            text-shadow: 0 0 3px #000, 1px 1px 7px #9be1ff, -1px -1px 7px #9be1ff;
+            p{
+                font-weight: 600;
+                font-size: 20px;
+                margin-left: 8px;
+            }
+        }
+    }
+  
+    .header-logo{
+        img{
+            object-fit: contain;
+            width: 300px;
+            height: 150px;
+            
+        }
+    }
+    .volume-btn{
+        position: absolute;
+        bottom: 5px;
+        left: 10px;
+        padding: 5px;
+        cursor: pointer;
+        i{
+            color: white;
+            text-shadow: 0 0 3px #000, 1px 1px 7px #9be1ff, -1px -1px 7px #9be1ff;
+        }
+    }
+}

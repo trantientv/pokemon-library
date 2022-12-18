@@ -1,0 +1,97 @@
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
+ 
+}
+.abilities{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 30%;
+    padding: 10px 15px;
+    color: white;
+    text-shadow: 0 0 3px #000, 2px 2px 7px #9be1ff, -2px -2px 7px #9be1ff;
+}
+.abilities-list{ 
+}
+.abilities-item{
+    display: flex;
+    align-items: center;
+    p{
+        user-select: none;
+        &:first-letter{
+            text-transform: uppercase;
+        }
+    }
+    span{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: white;
+        margin-left: 12px;
+        cursor: pointer;
+        i{
+            font-size: 10px;
+            color: black;
+        }
+    }
+}
+.abilities-detail{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 8px 10px;
+    span{
+        float: right;
+        padding: 4px 8px;
+
+    }
+}
+// STATS
+.stats{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    bottom: 5%;
+    left: 5%;
+    width: 45%;
+    height: 45%;
+}
+// Held Item
+.held-item{
+    position: absolute;
+    top: 5%;
+    right: 50%;
+    text-align: left;
+    p{
+        color: azure;
+        text-shadow: 0 0 3px #000, 2px 2px 7px #9be1ff, -2px -2px 7px #9be1ff;
+        &::first-letter{
+            text-transform: uppercase;
+        }
+    }
+}
+// Sprites
+.sprites{
+    position: absolute;
+    top: 5%;
+    right: 30%;
+    .sprites-item{
+        width: 100px;
+        height: 100px;
+        margin-bottom: 40px;
+        overflow: hidden;
+        img{
+            // object-fit: scale-down;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
