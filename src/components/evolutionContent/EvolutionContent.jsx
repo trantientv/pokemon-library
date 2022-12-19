@@ -2,7 +2,6 @@ import classNames from "classnames/bind";
 import { useState  } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import { Link } from 'react-router-dom'
 
 import styles from './EvolutionContent.module.scss'
 let cx = classNames.bind(styles)

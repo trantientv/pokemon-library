@@ -1,0 +1,9 @@
+.link-home{
+    position: absolute;
+    top: 60px;
+    right: 60px;
+    font-size: 20px;
+    &:hover{
+        color: red;
+    }
+}
